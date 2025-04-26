@@ -1,0 +1,56 @@
+{
+  "accounts": {
+    "e540ca30-2345-4b94-bd94-e29ef3bed415": {
+    "accountId": "e540ca30-2345-4b94-bd94-e29ef3bed415",
+    "accountName": "Launch Darkly Test Company ACme LLC",
+    "membership": {
+      "type": "Deluxe - Single Member LLC",
+      "paymentPlan": "Pay-As-You-Go"
+    },
+    "metrics": [{
+      "date": "2024-01",
+      "returning": 20,
+      "new": 12,
+      "grossRevenue": 120054.24,
+      "averageOrder": 27.12,
+      "usage": [
+        {
+          "feature": "Bug Tracking",
+          "mobile": 12,
+          "desktop": 123,
+          "console": 44,
+          "peakConcurrency": 150
+        },
+        {
+          "feature": "CodeGen AI",
+          "mobile": 12,
+          "desktop": 123,
+          "console": 44,
+          "peakConcurrency": 150
+        },
+        {
+          "feature": "Analytics",
+          "mobile": 12,
+          "desktop": 123,
+          "console": 44,
+          "peakConcurrency": 150
+        },
+        {
+          "feature": "Job Pipelines",
+          "mobile": 12,
+          "desktop": 123,
+          "console": 44,
+          "peakConcurrency": 150
+        },
+        {
+          "feature": "Build Automation",
+          "mobile": 12,
+          "desktop": 123,
+          "console": 44,
+          "peakConcurrency": 150
+        }
+      ]
+    }]
+  }
+}
+}
