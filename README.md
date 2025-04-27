@@ -6,9 +6,15 @@ A two-fold demo set up to show Feature Flags, Guarded Rollouts for Feature Relea
 - Backend Firebase Realtime DB API integration pulling live data to the dashboard (./server)
 - AI Config script with ChatGPT interaction via CLI, and tracking metrics back to LaunchDarkly via the LDAI SDK (./server/aiChat.js)
 
+### Overview of Project
+
+- Three of the front-end components are behind feature flags, one of which shows only for beta-testers in the segment with logged-in names (some familiar names may trigger the components to show)
+- The refresh button on the components sends an event back to LD and is a metric used for guarded rollout
+- AI Config is used in a CLI-style demo that passes context between LD and the app. This allows for straightforward demonstration of the feature
+
 ### Try the demo
 
-[Link to app hosted]
+[Link to app hosted TBD]
 
 ### How to Run
 
