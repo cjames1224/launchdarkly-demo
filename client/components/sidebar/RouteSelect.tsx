@@ -8,7 +8,7 @@ import {
   FiUsers,
 } from "react-icons/fi";
 
-// TODO - handle routes
+// TODO - handle selections
 export const RouteSelect = () => {
   return (
     <div className="space-y-1">

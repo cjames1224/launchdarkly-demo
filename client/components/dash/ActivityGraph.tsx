@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useState, useEffect } from 'react';
 import { FiUser } from "react-icons/fi";
 import {
   XAxis,
@@ -11,53 +12,37 @@ import {
   Line,
   LineChart,
 } from "recharts";
+import { RefreshButton } from "./RefreshButton";
 
-// TODO - update this data so it is valid against db
-const data = [
-  {
-    name: "Jan",
-    Returning: 275,
-    New: 41,
-  },
-  {
-    name: "Feb",
-    Returning: 620,
-    New: 96,
-  },
-  {
-    name: "Mar",
-    Returning: 202,
-    New: 192,
-  },
-  {
-    name: "Apr",
-    Returning: 500,
-    New: 50,
-  },
-  {
-    name: "May",
-    Returning: 355,
-    New: 400,
-  },
-  {
-    name: "Jun",
-    Returning: 875,
-    New: 200,
-  },
-  {
-    name: "Jul",
-    Returning: 700,
-    New: 205,
-  },
-];
+export const ActivityGraph = ({ldClient}:{ldClient:any}) => {
 
-export const ActivityGraph = () => {
+  const [accountData, setAccountData] = useState({ result: {
+    metrics: [] 
+  }});
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/metrics/1")
+      .then(data => {
+        return data.json();
+      })
+      .then(data => {
+        setAccountData(data)
+      })
+      .catch(error => {
+        console.error("ERROR", error);
+      })
+  }, []);
+
+
   return (
     <div className="col-span-8 overflow-hidden rounded border border-stone-300">
       <div className="p-4">
         <h3 className="flex items-center gap-1.5 font-medium">
-          <FiUser /> Activity
+          <FiUser /> User Activity
+          <RefreshButton widgetName="ActivityGraph" ldClient={ldClient}/>
+          
         </h3>
+
       </div>
 
       <div className="h-64 px-4">
@@ -65,7 +50,7 @@ export const ActivityGraph = () => {
           <LineChart
             width={500}
             height={400}
-            data={data}
+            data={accountData.result.metrics}
             margin={{
               top: 0,
               right: 0,
@@ -75,7 +60,7 @@ export const ActivityGraph = () => {
           >
             <CartesianGrid stroke="#e4e4e7" />
             <XAxis
-              dataKey="name"
+              dataKey="date"
               axisLine={false}
               tickLine={false}
               className="text-xs font-bold"
@@ -92,13 +77,13 @@ export const ActivityGraph = () => {
             />
             <Line
               type="monotone"
-              dataKey="New"
+              dataKey="new"
               stroke="#18181b"
               fill="#18181b"
             />
             <Line
               type="monotone"
-              dataKey="Returning"
+              dataKey="returning"
               stroke="#5b21b6"
               fill="#5b21b6"
             />

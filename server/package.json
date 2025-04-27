@@ -12,6 +12,7 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
+    "@launchdarkly/node-server-sdk": "^9.9.0",
     "@supabase/supabase-js": "^2.49.4",
     "axios": "^1.9.0",
     "cors": "^2.8.5",

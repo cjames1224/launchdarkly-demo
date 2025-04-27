@@ -3,9 +3,8 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 // add oauth provider
-import {
-  ClerkProvider
-} from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
+import { LaunchDarklyFlagProvider } from "@/components/launchdarkly/LaunchDarklyFlagProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,16 +21,18 @@ export const metadata: Metadata = {
   description: "Demo - Chris James",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
+    
     <ClerkProvider>
       <html lang="en">
         <body className={`${geistSans.className} text-stone-950 bg-stone-100`}>
-          {children}
+          <LaunchDarklyFlagProvider>{children}</LaunchDarklyFlagProvider>
         </body>
       </html>
     </ClerkProvider>

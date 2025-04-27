@@ -1,27 +1,74 @@
+"use client"
+
 import React from "react";
+import {useEffect, useState} from "react";
 import { FiTrendingDown, FiTrendingUp } from "react-icons/fi";
 
 // TODO - update this data so it is valid against db
 export const DataCards = () => {
+
+  const [accountData, setAccountData] = useState({ result: {
+    metrics: [{
+      grossRevenue:0,
+      trailingYear:0,
+      averageOrder:0
+    }] 
+  }});
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/metrics/1")
+      .then(data => {
+        return data.json();
+      })
+      .then(data => {
+        setAccountData(data)
+        console.log(data)
+      })
+      .catch(error => {
+        console.log("ERROR", error);
+      })
+  }, []);
+
   return (
     <>
       <Card
         title="Gross Revenue"
-        value="$120,054.24"
+        value={
+          Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+          }).format( 
+            accountData.result.metrics[accountData.result.metrics.length-1].grossRevenue
+          )
+         }
         pillText="2.75%"
         trend="up"
         period="From Jan 1st - Jul 31st"
       />
       <Card
         title="Avg Order"
-        value="$27.97"
+        value={
+          Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+          }).format( 
+            accountData.result.metrics[accountData.result.metrics.length-1].averageOrder
+          )
+         }
         pillText="1.01%"
         trend="down"
         period="From Jan 1st - Jul 31st"
       />
       <Card
         title="Trailing Year"
-        value="$278,054.24"
+        value={
+          Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+          }).format( 
+            accountData.result.metrics[accountData.result.metrics.length-1].trailingYear
+          )
+         }
         pillText="60.75%"
         trend="up"
         period="Previous 365 days"

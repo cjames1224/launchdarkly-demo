@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
 const FirebaseClient = require('./services/firebase')
+const LaunchDarkly = require('@launchdarkly/node-server-sdk');
 
 const PORT = process.env.port || 3000;
 

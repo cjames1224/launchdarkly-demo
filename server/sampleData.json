@@ -1,56 +1,540 @@
 {
   "accounts": {
-    "e540ca30-2345-4b94-bd94-e29ef3bed415": {
-    "accountId": "e540ca30-2345-4b94-bd94-e29ef3bed415",
-    "accountName": "Launch Darkly Test Company ACme LLC",
-    "membership": {
-      "type": "Deluxe - Single Member LLC",
-      "paymentPlan": "Pay-As-You-Go"
-    },
-    "metrics": [{
-      "date": "2024-01",
-      "returning": 20,
-      "new": 12,
-      "grossRevenue": 120054.24,
-      "averageOrder": 27.12,
-      "usage": [
+    "1": {
+      "accountId": "1",
+      "accountName": "Launch Darkly Test Company ACme LLC",
+      "membership": {
+        "type": "Deluxe - Single Member LLC",
+        "paymentPlan": "Pay-As-You-Go"
+      },
+      "transactionHistory": [{
+        "id": "34203723-e427-4e9f-a0fa-44ec8489cb93",
+        "sku": "IAP - Level Unlock",
+        "date": "2025-04-26",
+        "price": 9.99
+      },{
+        "id": "f8fc84c2-fd58-4880-955f-43afc70643ca",
+        "sku": "IAP - Equipment",
+        "date": "2025-04-24",
+        "price": 14.99
+      },{
+        "id": "34203723-e427-4e9f-a0fa-44ec8489cb93",
+        "sku": "IAP - Equipment",
+        "date": "2025-04-22",
+        "price": 14.99
+      },{
+        "id": "2b1b748e-7608-4fdf-8ffb-d508fe443792",
+        "sku": "IAP - Equipment",
+        "date": "2025-04-22",
+        "price": 14.99
+      },{
+        "id": "65513a79-2e52-4b3d-b95f-e50f993661cc",
+        "sku": "IAP - Level Unlock",
+        "date": "2025-04-17",
+        "price": 9.99
+      },{
+        "id": "34203723-e427-4e9f-a0fa-44ec8489cb93",
+        "sku": "IAP - Level Unlock",
+        "date": "2025-04-12",
+        "price": 9.99
+      }]
+      "metrics": [
         {
-          "feature": "Bug Tracking",
-          "mobile": 12,
-          "desktop": 123,
-          "console": 44,
-          "peakConcurrency": 150
+          "date": "2024-06",
+          "returning": 61,
+          "new": 23,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
         },
         {
-          "feature": "CodeGen AI",
-          "mobile": 12,
-          "desktop": 123,
-          "console": 44,
-          "peakConcurrency": 150
+          "date": "2024-07",
+          "returning": 47,
+          "new": 8,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
         },
         {
-          "feature": "Analytics",
-          "mobile": 12,
-          "desktop": 123,
-          "console": 44,
-          "peakConcurrency": 150
+          "date": "2024-08",
+          "returning": 35,
+          "new": 59,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
         },
         {
-          "feature": "Job Pipelines",
-          "mobile": 12,
-          "desktop": 123,
-          "console": 44,
-          "peakConcurrency": 150
+          "date": "2024-09",
+          "returning": 56,
+          "new": 85,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
         },
         {
-          "feature": "Build Automation",
-          "mobile": 12,
-          "desktop": 123,
-          "console": 44,
-          "peakConcurrency": 150
+          "date": "2024-10",
+          "returning": 74,
+          "new": 147,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
+        },
+        {
+          "date": "2024-11",
+          "returning": 41,
+          "new": 36,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
+        },
+        {
+          "date": "2024-12",
+          "returning": 20,
+          "new": 12,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
+        },
+        {
+          "date": "2025-01",
+          "returning": 65,
+          "new": 24,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
+        },
+        {
+          "date": "2025-02",
+          "returning": 32,
+          "new": 102,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
+        },
+        {
+          "date": "2025-03",
+          "returning": 52,
+          "new": 45,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 12,
+              "desktop": 123,
+              "console": 44,
+              "peakConcurrency": 150
+            }
+          ]
+        },
+        {
+          "date": "2025-04",
+          "returning": 12,
+          "new": 95,
+          "grossRevenue": 120054.24,
+          "trailingYear": 987333.98,
+          "averageOrder": 27.12,
+          "usage": [
+            {
+              "feature": "Bug Tracking",
+              "mobile": 52,
+              "desktop": 100,
+              "console": 77,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "CodeGen AI",
+              "mobile": 58,
+              "desktop": 66,
+              "console": 99,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Analytics",
+              "mobile": 77,
+              "desktop": 55,
+              "console": 11,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Job Pipelines",
+              "mobile": 75,
+              "desktop": 99,
+              "console": 45,
+              "peakConcurrency": 150
+            },
+            {
+              "feature": "Build Automation",
+              "mobile": 150,
+              "desktop": 47,
+              "console": 96,
+              "peakConcurrency": 150
+            }
+          ]
         }
       ]
-    }]
+    }
   }
-}
 }
