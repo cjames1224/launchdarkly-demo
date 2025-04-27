@@ -103,7 +103,7 @@ const dashboardAccountId = '1';
         content: lastMessage,
       });
 
-      console.log(inspect(chatHistory));
+      // console.log(inspect(chatHistory));
 
       // send the chat completion message while tracking via LD
       const chatCompletion = await aiConfig.tracker.trackOpenAIMetrics(
